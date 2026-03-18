@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mahila Mitra 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: #333;
+}
+
+header {
+    padding: 60px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #ff4d6d;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4d6d;
+    color: white;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#surprise {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ff4d6d;
+}
+
+footer {
+    padding: 20px;
+    background: #ff4d6d;
+    color: white;
+}
+</style>
+
+<script>
+function showMessage() {
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Mahila Mitra 💖</h1>
+    <p>Dedicated to the most amazing woman I know 😉</p>
+    <button onclick="showMessage()">Click if you're awesome 😌</button>
+    <p id="surprise">I knew it 😏 You are amazing!</p>
+</header>
+
+<div class="section">
+    <h2>About You 😄</h2>
+    <p>
+        This page is made for someone very special...<br>
+        Smart, kind, thodi si attitude 😏 and definitely unforgettable.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Your Qualities 🌸</h2>
+    <div class="card">🌸 Beautiful</div>
+    <div class="card">🧠 Intelligent</div>
+    <div class="card">😂 Funny (sometimes 😜)</div>
+    <div class="card">💪 Strong</div>
+</div>
+
+<div class="section">
+    <h2>Things I Like About You 💬</h2>
+    <p>
+        You make simple conversations interesting ✨<br>
+        You reply late... but worth the wait 😏<br>
+        And honestly... you're kinda special 😊
+    </p>
+</div>
+
+<div class="section">
+    <h2>Final Message 💌</h2>
+    <p>
+        This page is just a small effort to make you smile.<br>
+        If it worked... mission successful 😌
+    </p>
+</div>
+
+<footer>
+    Made with a little effort... and a little courage 😄
+</footer>
+
+</body>
+</html>
