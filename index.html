@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mahila Mitra 💖</title>
-
+<title>Mahila Mitra 💖 Shivangi</title>
 <style>
+/* Body & Background */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
     color: #333;
     background: #ffc0cb; /* Baby Pink */
+    overflow-x: hidden;
 }
 
+/* Header */
 header {
     padding: 60px 20px;
     color: white;
 }
-
 header h1 {
     font-size: 3em;
 }
 
+/* Surprise Button */
 button {
     padding: 12px 25px;
     border: none;
@@ -32,16 +34,17 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
-
 button:hover {
     background: #ff4d6d;
     color: white;
 }
 
+/* Sections */
 .section {
     padding: 40px 20px;
 }
 
+/* Cards */
 .card {
     display: inline-block;
     background: white;
@@ -52,72 +55,109 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-#surprise {
-    display: none;
-    font-size: 20px;
-    margin-top: 20px;
+/* Hearts */
+.heart {
+    position: absolute;
+    font-size: 12px;
     color: #ff4d6d;
+    animation: float 5s linear infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
 }
 
+/* Footer */
 footer {
     padding: 20px;
     background: #ff4d6d;
     color: white;
 }
-</style>
 
+/* Surprise Message */
+#surprise-msg {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ff4d6d;
+}
+</style>
+</head>
+<body>
+
+<!-- Hearts -->
 <script>
-function showMessage() {
-    document.getElementById("surprise").style.display = "block";
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.innerText = '💖';
+    heart.style.left = Math.random() * window.innerWidth + 'px';
+    heart.style.fontSize = (10 + Math.random() * 10) + 'px';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+}
+setInterval(createHeart, 300);
+</script>
+
+<header>
+    <h1 id="typed-header"></h1>
+    <button onclick="showSurprise()">Click for a Surprise 😏</button>
+    <p id="surprise-msg"></p>
+</header>
+
+<!-- Typing Effect -->
+<script>
+const text = "Dedicated to the most amazing woman I know, Shivangi 😉";
+let i = 0;
+function typeText() {
+    if(i < text.length){
+        document.getElementById("typed-header").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeText, 100);
+    }
+}
+typeText();
+</script>
+
+<!-- Surprise Button -->
+<script>
+function showSurprise() {
+    const messages = [
+        "Shivangi, you’re amazing 😌",
+        "I knew it, you’re special 😏",
+        "Keep smiling, Shivangi 💖"
+    ];
+    const random = messages[Math.floor(Math.random() * messages.length)];
+    const p = document.getElementById("surprise-msg");
+    p.innerText = random;
+    p.style.display = "block";
 }
 </script>
 
-</head>
-
-<body>
-
-<header>
-    <h1>Mahila Mitra 💖</h1>
-    <p>Dedicated to the most amazing woman I know 😉</p>
-    <button onclick="showMessage()">Click if you're awesome 😌</button>
-    <p id="surprise">I knew it 😏 You are amazing!</p>
-</header>
-
-<div class="section">
-    <h2>About You 😄</h2>
-    <p>
-        This page is made for someone very special...<br>
-        Smart, kind, thodi si attitude 😏 and definitely unforgettable.
-    </p>
+<div class="section" id="about">
+    <h2>ABOUT</h2>
+    <p> <!-- Add your text here later --> </p>
 </div>
 
 <div class="section">
-    <h2>Your Qualities 🌸</h2>
+    <h2>Her Qualities 🌸</h2>
     <div class="card">🌸 Beautiful</div>
     <div class="card">🧠 Intelligent</div>
-    <div class="card">😂 Funny (sometimes 😜)</div>
+    <div class="card">😂 Funny</div>
     <div class="card">💪 Strong</div>
 </div>
 
+<!-- Audio -->
 <div class="section">
-    <h2>Things I Like About You 💬</h2>
-    <p>
-        You make simple conversations interesting ✨<br>
-        You reply late... but worth the wait 😏<br>
-        And honestly... you're kinda special 😊
-    </p>
-</div>
-
-<div class="section">
-    <h2>Final Message 💌</h2>
-    <p>
-        This page is just a small effort to make you smile.<br>
-        If it worked... mission successful 😌
-    </p>
+    <h2>Enjoy the Song 🎶</h2>
+    <audio controls>
+        <source src="nazm-nazm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </div>
 
 <footer>
-    Made with a little effort... and a little courage 😄
+    Made with ❤️ and a little courage, Shivangi 😄
 </footer>
 
 </body>
