@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dearest Dopamine 💌</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:linear-gradient(to bottom,#fff0f5,#ffe4ec);
+min-height:100vh;
+padding:40px 20px;
+font-family:Georgia,serif;
+overflow-x:hidden;
+position:relative;
+}
+
+/* FALLING HEARTS */
+
+.heart{
+position:fixed;
+top:-20px;
+color:#ff4f81;
+animation:fall linear infinite;
+opacity:0.7;
+z-index:1;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-10vh) rotate(0deg);
+opacity:0;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:1;
+}
+
+}
+
+/* MAIN CONTAINER */
+
+.container{
+max-width:950px;
+margin:auto;
+background:rgba(255,255,255,0.95);
+padding:60px;
+border-radius:35px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+position:relative;
+z-index:10;
+}
+
+/* HEADING */
+
+h1{
+text-align:center;
+font-size:58px;
+color:#c2185b;
+margin-bottom:15px;
+font-family:cursive;
+}
+
+.subtitle{
+text-align:center;
+font-size:24px;
+color:#777;
+margin-bottom:45px;
+font-style:italic;
+}
+
+/* LETTER */
+
+.content{
+font-size:24px;
+line-height:2.2;
+color:#444;
+}
+
+.content p{
+margin-bottom:35px;
+text-align:justify;
+}
+
+/* SPECIAL BOX */
+
+.highlight{
+background:#fff0f5;
+padding:30px;
+border-radius:25px;
+margin:40px 0;
+font-size:24px;
+line-height:2.1;
+color:#b03060;
+box-shadow:0 5px 15px rgba(255,77,121,0.1);
+}
+
+/* SIGNATURE */
+
+.signature{
+margin-top:50px;
+text-align:right;
+font-size:32px;
+font-family:cursive;
+color:#c2185b;
+line-height:1.8;
+}
+
+/* NEXT BUTTON */
+
+.next{
+text-align:center;
+margin-top:60px;
+}
+
+.next a{
+text-decoration:none;
+background:linear-gradient(to right,#ff5f8f,#ff2f6d);
+padding:18px 38px;
+border-radius:50px;
+color:white;
+font-size:24px;
+font-weight:bold;
+display:inline-block;
+box-shadow:0 8px 20px rgba(255,77,121,0.35);
+transition:0.3s;
+}
+
+.next a:hover{
+transform:scale(1.08);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:42px;
+}
+
+.content{
+font-size:19px;
+}
+
+.highlight{
+font-size:19px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.signature{
+font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FALLING HEARTS -->
+
+<script>
+
+for(let i=0;i<70;i++){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(15+Math.random()*25)+"px";
+
+heart.style.animationDuration=(3+Math.random()*5)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+<!-- MAIN LETTER -->
+
+<div class="container">
+
+<h1>Dearest Dopamine 💖</h1>
+
+<div class="subtitle">
+
+A letter directly from my heart to yours... 🥺
+
+</div>
+
+<div class="content">
+
+<p>
+
+I accidently upset the most precious and adorable person of my life...
+please forgive me 💔
+
+</p>
+
+<p>
+
+Mujhe sach me nahi pata meri kis baat ya kis behavior se tumhari feelings hurt hui,
+but still jab mai sochta hu to mujhe lagta hai shayad ye baate aapko hurt hui hai —
+1. Us din hath wali baat
+2. Payal waali baat
+3. Kal raat me call karne wali baat
+
+Lekin in sabke liye mai kisi tarah ka koi explanation nahi dena chahta...
+bas mai dil se sorry bolna chahta hu.
+
+Believe me, mera intention kabhi bhi tumhe hurt karne ka nahi tha.
+
+</p>
+
+<div class="highlight">
+
+Tum meri life me bahut important ho,
+isliye ye sochkar hi bura lag raha hai ki meri kisi baat ne tumhe upset kiya. 💔
+
+Kabhi kabhi insaan bina soche kuch bol deta hai...
+aur tum to janti hi ho mai gadha hu 🥺
+
+Bina soche bol deta hu ya kuch aisa kar deta hu
+jiska ehsaas baad me hota hai...
+
+</div>
+
+<p>
+
+Main tumhari feelings ki bahut respect karta hu.
+
+Agar meri kisi baat, mazaak, behavior ya ignorance ne tumhara dil dukhaya hai,
+to genuinely maafi chahta hu.
+
+Main excuses nahi dena chahta,
+kyunki galti chahe jaanbujhkar ho ya anjaane me...
+hurt to hota hi hai.
+
+</p>
+
+<p>
+
+Bas itna chahta hu ki tum ye samjho ki maine kabhi bhi tumhe intentionally hurt karne ki sochi tak nahi.
+
+Tumhari narazgi mujhe andar se disturb kar rahi hai,
+kyunki tum mere liye sirf ek normal insaan nahi ho...
+
+</p>
+
+<div class="highlight">
+
+Agar possible ho to mujhe maaf kar dena 🥺
+
+Tumhari smile...
+tumhara normal tareeke se baat karna...
+infact tum...
+mere liye bahut matter karti ho ❤️
+
+</div>
+
+</div>
+
+<div class="signature">
+
+Forever Sorry 💖 <br>
+
+Gadha 🥺
+
+</div>
+
+<!-- NEXT PAGE BUTTON -->
+
+<div class="next">
+
+<a href="page3.html">
+
+Please Click Here ❤️
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
