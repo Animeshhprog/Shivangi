@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Song For You 🎶</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(to bottom,#ffe6ec,#fff5f8);
+overflow:hidden;
+}
+
+.container{
+width:90%;
+max-width:700px;
+background:white;
+padding:50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1{
+font-size:50px;
+color:#c2185b;
+margin-bottom:20px;
+font-family:cursive;
+}
+
+p{
+font-size:28px;
+line-height:1.8;
+margin-bottom:35px;
+color:#444;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+color:white;
+}
+
+.yes{
+background:#ff4f81;
+}
+
+.no{
+background:#666;
+border:none;
+cursor:pointer;
+}
+
+.next{
+margin-top:40px;
+}
+
+.next a{
+text-decoration:none;
+background:#ff4f81;
+padding:15px 30px;
+border-radius:40px;
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Oye Sugli Ladki 💖</h1>
+
+<p>
+
+I want to dedicate a song to you ❤️<br><br>
+
+Please... Please... Please listen to it 🥺
+
+</p>
+
+<div class="buttons">
+
+<a 
+href="https://youtu.be/EatzcaVJRMs?si=NnsaIQAmjEF8WINk"
+target="_blank"
+class="btn yes"
+>
+
+YES 💖
+
+</a>
+
+<button class="btn no" onclick="showMessage()">
+
+NO 😔
+
+</button>
+
+</div>
+
+<div class="next">
+
+<a href="page4.html">
+
+Click Here For Next Page ➜
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function showMessage(){
+
+alert("Please na... ek baar sun lo 🥺❤️");
+
+}
+
+</script>
+
+</body>
+</html>
